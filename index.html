@@ -1,0 +1,40 @@
+<style>
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #1F2227;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  transform: translate(-50%, -50%);
+  top: 50vh;
+  left: 50vw;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.gif {
+  position: relative;
+  box-sizing: border-box;
+  border: 3px solid rgba(255, 255, 255, 0.05);
+}
+
+.background {
+  position: absolute;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  filter: blur(300px);
+}
+</style>
+
+<img src="https://i.redd.it/fpklvr38zpy61.gif" width="100%" class="background"/>
+<div class="container">
+  <img src="https://i.redd.it/fpklvr38zpy61.gif" width="100%" class="gif"/>
+</div>
